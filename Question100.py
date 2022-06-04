@@ -24,7 +24,11 @@ def FilterPalindrome(checklist)->list:
         print(rev_string)
         find_num=checklist.count(rev_string)
         if find_num>0:
-            print("(",string,",",rev_string,")")
+            print("(",end="")
+            print(string,end="")
+            print(",",end="")
+            print("rev_string",end="")
+            print(")",end="")
         else:
             continue
 
